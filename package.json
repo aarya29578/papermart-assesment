@@ -1,0 +1,40 @@
+{
+  "name": "reliable-paper-mart-ai-assistant",
+  "version": "1.0.0",
+  "description": "AI-powered WhatsApp customer support assistant for Reliable Paper Mart",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node tests/run_all_tests.js",
+    "test:all": "node tests/run_all_tests.js",
+    "test:gemini": "node tests/gemini_suite.js",
+    "test:webhook": "node tests/webhook_suite.js",
+    "test:memory": "node tests/memory_suite.js",
+    "test:lead": "node tests/lead_suite.js",
+    "test:handoff": "node tests/handoff_suite.js",
+    "test:journey": "node tests/e2e_journey_suite.js",
+    "test:webhook:ai": "node tests/webhook_ai_suite.js",
+    "test:faq": "node tests/faq_expansion_suite.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "gemini-api",
+    "whatsapp-ai",
+    "customer-support"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^3.6.1",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "mongoose": "^9.12.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
